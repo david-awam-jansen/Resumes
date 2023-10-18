@@ -18,3 +18,8 @@ jobs:
       - name: Check dir
         run: |
           ls -lh
+      - name: upload pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: DJansen_CV.pdf
