@@ -14,7 +14,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: DJansen_CV.pdf
+          path: my_test.pdf
       - name: Check dir
         run: |
           ls -lh
