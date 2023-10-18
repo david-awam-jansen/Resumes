@@ -17,4 +17,4 @@ jobs:
           path: DJansen_CV.pdf
       - name: Check dir
         run: |
-          dir
+          ls -lh
