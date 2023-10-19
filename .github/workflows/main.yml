@@ -24,3 +24,14 @@ jobs:
           git add DJansen_CV.pdf
           git commit -m "Automated update to pdf"
           git push
+      - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'test2.md'
+        destination_repo: 'david-awam-jansen/training'
+        destination_folder: 'presentations/pdf'
+        user_email: 'david.awam.jansen@gmail.com'
+        user_name: 'David Jansen'
+        commit_message: 'Updated CV'  
