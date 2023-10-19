@@ -15,7 +15,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: DJansen_CV.tex
-              extra_fonts: ./fonts/FontAwesome.ttf
+          extra_fonts: ./fonts/FontAwesome.ttf
           latexmk_use_xelatex: true
       - name: Commit report
         run: |
