@@ -15,9 +15,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: my_test.tex
-          - name: Commit report
-      run: |
-        git config --global user.name 'David Jansen'
-        git config --global user.email 'david-awam-jansen@users.noreply.github.com'
-        git commit -am "Automated update to pdf"
-        git push
+      - name: Commit report
+        run: |
+          git config --global user.name 'David Jansen'
+          git config --global user.email 'david-awam-jansen@users.noreply.github.com'
+          git commit -am "Automated update to pdf"
+          git push
