@@ -1,36 +1,26 @@
-n\documentclass[12pt]{article}
+\documentclass[a4paper,12pt]{letter}
 
-\usepackage{amsmath}
+% Some of the article customisations are relevant for this class
 
-\usepackage{graphicx}
+\name{David Jansen} % To be used for the return address on the envelope
+\signature{DJ} % Goes after the closing (ie at the end of the letter, with space for a signature)
+\address{Address \\ of \\ Sender}
+% Alternatively, these may be set on an individual basis within each letter environment.
 
-\usepackage{hyperref}
-
-\usepackage[utf8]{inputenc}
-
-\title{How to automatically turn \LaTeX code into a pdf}
-
-\author{David Jansen}
-
-\date{2023–10–23}
+\makelabels % this command prints envelope labels on the final page of the document
 
 \begin{document}
+\begin{letter}{Name and \\ Address \\ of \\ Receiver}
 
-\maketitle
+\opening{Hi} % eg Hello.
 
-\section{Introduction}
+This letter should be send to the repo.
 
-Here is the introduction of our text
-Will it work? A second attempt.
+\closing{Cheers} % eg Regards,
 
-\begin{itemize}
+\cc{} % people this letter is cc-ed to
+\encl{} % list of anything enclosed
+\ps{} % any post scriptums. ``PS'' labels must be put in manually
 
-\item One
-
-\item Two
-
-\item Three
-
-\end{itemize}
-
+\end{letter}
 \end{document}
